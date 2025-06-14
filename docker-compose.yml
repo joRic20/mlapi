@@ -1,0 +1,12 @@
+version: '3.8'
+
+services:
+  web:
+    build: .
+    stop_signal: SIGINT
+    ports:
+      - "80:80"      # map container’s 80 → host’s 80
+    volumes:
+      - ./app:/app     # for live code updates without rebuilding
+    env_file:
+      - .env
