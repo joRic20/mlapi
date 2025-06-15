@@ -1,5 +1,4 @@
 {
   "schemaVersion": 2,
-  "dockerComposeFile": "docker-compose.yml",
-  "serviceName": "web"
+  "dockerfilePath": "./Dockerfile"
 }
